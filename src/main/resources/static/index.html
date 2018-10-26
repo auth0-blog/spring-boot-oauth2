@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calling an API</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="content">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Auth0 - jQuery</a>
+
+        <button id="btn-home-view" class="btn btn-primary btn-margin">
+          Home
+        </button>
+
+        <button id="btn-profile-view" class="btn btn-primary btn-margin">
+          Profile
+        </button>
+
+        <button id="btn-ping-view" class="btn btn-primary btn-margin">
+          Ping
+        </button>
+
+        <button id="btn-login" class="btn btn-primary btn-margin">
+          Log In
+        </button>
+
+        <button id="btn-logout" class="btn btn-primary btn-margin">
+          Log Out
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- home view -->
+    <div id="home-view">
+      <h4></h4>
+    </div>
+
+    <!-- profile view -->
+    <div id="profile-view" class="panel panel-default profile-area">
+      <div class="panel-heading"><h3>Profile</h3></div>
+      <div class="panel-body">
+        <img class="avatar" alt="avatar">
+        <div>
+          <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
+          <h3 class="nickname"></h3>
+        </div>
+        <pre class="full-profile"></pre>
+      </div>
+    </div>
+
+    <!-- ping view -->
+    <div id="ping-view">
+      <h1>Make a Call to the Server</h1>
+
+      <p id="call-private-message">
+        Log in to call a private (secured) server endpoint.
+      </p>
+
+      <button id="btn-ping-public" class="btn btn-primary">
+        Call Public
+      </button>
+
+      <button id="btn-ping-private" class="btn btn-primary">
+        Call Private
+      </button>
+
+      <button id="btn-ping-private-scoped" class="btn btn-primary">
+        Call Private Scoped
+      </button>
+
+      <h2 id="ping-message"></h2>
+    </div>
+  </main>
+</div>
+
+<script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
