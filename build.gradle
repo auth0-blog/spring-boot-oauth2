@@ -30,4 +30,5 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.security:spring-security-test')
 	compile('org.glassfish.jaxb:jaxb-runtime:2.3.1')
+	compile('org.json:json:20180813')
 }
